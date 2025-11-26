@@ -1,0 +1,701 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$ADMINPASSHASH",
+      "last_login": null,
+      "is_superuser": true,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "role": "admin",
+      "username": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-01-01T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$OWNER1PASSHASH",
+      "last_login": null,
+      "is_superuser": false,
+      "name": "John Owner",
+      "email": "owner1@example.com",
+      "role": "owner",
+      "username": "owner1@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-01-02T11:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$OWNER2PASSHASH",
+      "last_login": null,
+      "is_superuser": false,
+      "name": "Sarah Owner",
+      "email": "owner2@example.com",
+      "role": "owner",
+      "username": "owner2@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-01-03T09:30:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$CUST1PASSHASH",
+      "name": "Michael Customer",
+      "email": "customer1@example.com",
+      "role": "customer",
+      "username": "customer1@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2025-01-05T08:00:00Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$CUST2PASSHASH",
+      "name": "Emma Customer",
+      "email": "customer2@example.com",
+      "role": "customer",
+      "username": "customer2@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2025-01-06T14:00:00Z"
+    }
+  },
+
+  {
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$AGENTPASSHASH",
+      "name": "David Agent",
+      "email": "agent@example.com",
+      "role": "agent",
+      "username": "agent@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2025-01-07T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "restaurants.restaurant",
+    "pk": 1,
+    "fields": {
+      "owner": 2,
+      "name": "Paradise Biryani",
+      "address": "Hyderabad, India",
+      "rating": "4.5",
+      "is_active": true,
+      "created_at": "2025-01-10T12:00:00Z",
+      "updated_at": "2025-01-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 2,
+    "fields": {
+      "owner": 2,
+      "name": "Tandoori Flames",
+      "address": "Bangalore, India",
+      "rating": "4.3",
+      "is_active": true,
+      "created_at": "2025-01-11T12:00:00Z",
+      "updated_at": "2025-01-11T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 3,
+    "fields": {
+      "owner": 3,
+      "name": "Pizza Hub",
+      "address": "Chennai, India",
+      "rating": "4.1",
+      "is_active": true,
+      "created_at": "2025-01-12T12:00:00Z",
+      "updated_at": "2025-01-12T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 4,
+    "fields": {
+      "owner": 3,
+      "name": "Burger House",
+      "address": "Mumbai, India",
+      "rating": "4.4",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 5,
+    "fields": {
+      "owner": 2,
+      "name": "Dominos Pizza",
+      "address": "Trichy, India",
+      "rating": "4.2",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 6,
+    "fields": {
+      "owner": 2,
+      "name": "GrillChicken",
+      "address": "Salem, India",
+      "rating": "4.9",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 7,
+    "fields": {
+      "owner": 1,
+      "name": "PaniPuri Wala",
+      "address": "Mumbai, India",
+      "rating": "4.2",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.restaurant",
+    "pk": 8,
+    "fields": {
+      "owner": 2,
+      "name": "Arabian Mandi",
+      "address": "Tanjore, India",
+      "rating": "4.5",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "restaurants.restaurant",
+    "pk": 9,
+    "fields": {
+      "owner": 1,
+      "name": "BK King",
+      "address": "Chennai, India",
+      "rating": "4.4",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "restaurants.restaurant",
+    "pk": 10,
+    "fields": {
+      "owner": 3,
+      "name": "Ibaco",
+      "address": "Mumbai, India",
+      "rating": "4.1",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "restaurants.restaurant",
+    "pk": 11,
+    "fields": {
+      "owner": 3,
+      "name": "Coffee Day",
+      "address": "Banglore, India",
+      "rating": "4.2",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "restaurants.restaurant",
+    "pk": 12,
+    "fields": {
+      "owner": 1,
+      "name": "Juice Spot",
+      "address": "Trichy, India",
+      "rating": "4.6",
+      "is_active": true,
+      "created_at": "2025-01-13T12:00:00Z",
+      "updated_at": "2025-01-13T12:00:00Z"
+    }
+  },
+
+
+
+
+  {
+    "model": "menu.category",
+    "pk": 1,
+    "fields": { "name": "Biryani" }
+  },
+  {
+    "model": "menu.category",
+    "pk": 2,
+    "fields": { "name": "Pizza" }
+  },
+  {
+    "model": "menu.category",
+    "pk": 3,
+    "fields": { "name": "Burgers" }
+  },
+  {
+    "model": "menu.category",
+    "pk": 4,
+    "fields": { "name": "Starters" }
+  },
+  {
+    "model": "menu.category",
+    "pk": 5,
+    "fields": { "name": "Desserts" }
+  },
+  {
+    "model": "menu.category",
+    "pk": 6,
+    "fields": { "name": "Drinks" }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 1,
+    "fields": {
+      "restaurant": 1,
+      "category": 1,
+      "name": "Chicken Biryani",
+      "price": "250.00",
+      "description": "Hyderabadi Chicken Biryani",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 2,
+    "fields": {
+      "restaurant": 1,
+      "category": 4,
+      "name": "Chicken 65",
+      "price": "180.00",
+      "description": "Crispy spicy chicken",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T10:10:00Z",
+      "updated_at": "2025-01-15T10:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 3,
+    "fields": {
+      "restaurant": 2,
+      "category": 4,
+      "name": "Paneer Tikka",
+      "price": "220.00",
+      "description": "Smokey grilled paneer",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T11:00:00Z",
+      "updated_at": "2025-01-15T11:00:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 4,
+    "fields": {
+      "restaurant": 2,
+      "category": 1,
+      "name": "Mutton Biryani",
+      "price": "320.00",
+      "description": "Authentic spicy mutton biryani",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T11:10:00Z",
+      "updated_at": "2025-01-15T11:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 5,
+    "fields": {
+      "restaurant": 3,
+      "category": 2,
+      "name": "Margherita Pizza",
+      "price": "299.00",
+      "description": "Classic cheese pizza",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T12:00:00Z",
+      "updated_at": "2025-01-15T12:00:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 6,
+    "fields": {
+      "restaurant": 3,
+      "category": 2,
+      "name": "Chicken Supreme Pizza",
+      "price": "399.00",
+      "description": "Loaded chicken pizza",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T12:10:00Z",
+      "updated_at": "2025-01-15T12:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 7,
+    "fields": {
+      "restaurant": 4,
+      "category": 3,
+      "name": "Veg Burger",
+      "price": "149.00",
+      "description": "Crispy veg patty burger",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:00:00Z",
+      "updated_at": "2025-01-15T13:00:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 8,
+    "fields": {
+      "restaurant": 4,
+      "category": 3,
+      "name": "Chicken Burger",
+      "price": "199.00",
+      "description": "Juicy chicken patty",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+    {
+    "model": "menu.menuitem",
+    "pk": 9,
+    "fields": {
+      "restaurant": 7,
+      "category": 4,
+      "name": "Pani Puri Platter",
+      "price": "79.00",
+      "description": "Varieties of Pani Puri",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 10,
+    "fields": {
+      "restaurant": 5,
+      "category": 2,
+      "name": "Cheese Pizza",
+      "price": "129.00",
+      "description": "Juicy cheeze layered pizza",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 11,
+    "fields": {
+      "restaurant": 5,
+      "category": 2,
+      "name": "Chicken Sauce Pizza",
+      "price": "399.00",
+      "description": "Hot and Sweet Saucy Layer",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 12,
+    "fields": {
+      "restaurant": 6,
+      "category": 4,
+      "name": "Chicken Barbeque",
+      "price": "399.00",
+      "description": "Spicy Chicken with smoked flavor",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 13,
+    "fields": {
+      "restaurant": 6,
+      "category": 4,
+      "name": "Chicken Nuggets",
+      "price": "159.00",
+      "description": "Chicken smashed",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 14,
+    "fields": {
+      "restaurant": 8,
+      "category": 1,
+      "name": "Mutton Mandhi",
+      "price": "799.00",
+      "description": "Juicy Mutton with Basmati Rice",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 15,
+    "fields": {
+      "restaurant": 9,
+      "category": 3,
+      "name": "Veg BK Spl Burger",
+      "price": "199.00",
+      "description": "Veggies filled with tomato ketchup",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 16,
+    "fields": {
+      "restaurant": 9,
+      "category": 3,
+      "name": "Juicy Patty Burger",
+      "price": "129.00",
+      "description": "Juicy chicken patty",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 17,
+    "fields": {
+      "restaurant": 10,
+      "category": 5,
+      "name": "Chocolate Softy",
+      "price": "99.00",
+      "description": "Rich chocolate with choco-spreads",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 18,
+    "fields": {
+      "restaurant": 10,
+      "category": 5,
+      "name": "Butterscotch Falooda",
+      "price": "159.00",
+      "description": "Butter mixed with strawberry",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 19,
+    "fields": {
+      "restaurant": 11,
+      "category": 6,
+      "name": "Cold Coffee",
+      "price": "129.00",
+      "description": "Chilled Coffee",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "pk": 6,
+    "fields": {
+      "restaurant": 11,
+      "category": 3,
+      "name": "Hot Chocolate Coffee",
+      "price": "159.00",
+      "description": "Heated Chocolate poured with Coffee",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 21,
+    "fields": {
+      "restaurant": 12,
+      "category": 6,
+      "name": "Paneer Soda",
+      "price": "79.00",
+      "description": "Chill Soda for energy",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 22,
+    "fields": {
+      "restaurant": 12,
+      "category": 6,
+      "name": "Mixed Lime Soda",
+      "price": "99.00",
+      "description": "Lime rich flavour",
+      "image": "",
+      "is_available": true,
+      "created_at": "2025-01-15T13:10:00Z",
+      "updated_at": "2025-01-15T13:10:00Z"
+    }
+  },
+
+
+  {
+    "model": "restaurants.review",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "restaurant": 1,
+      "rating": 5,
+      "comment": "Amazing biryani!",
+      "created_at": "2025-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.review",
+    "pk": 2,
+    "fields": {
+      "user": 5,
+      "restaurant": 1,
+      "rating": 4,
+      "comment": "Good taste but spicy",
+      "created_at": "2025-01-20T11:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.review",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "restaurant": 2,
+      "rating": 4,
+      "comment": "Paneer tikka was great!",
+      "created_at": "2025-01-20T12:00:00Z"
+    }
+  },
+  {
+    "model": "restaurants.review",
+    "pk": 4,
+    "fields": {
+      "user": 5,
+      "restaurant": 3,
+      "rating": 5,
+      "comment": "Loved the pizza!",
+      "created_at": "2025-01-20T13:00:00Z"
+    }
+  },
+
+  {
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "restaurant": 1,
+      "total_amount": "430.00",
+      "payment_method": "cod",
+      "status": "placed",
+      "assigned_agent": 6,
+      "delivery_address": "Customer1 Home Address",
+      "notes": "",
+      "created_at": "2025-01-25T10:00:00Z",
+      "updated_at": "2025-01-25T10:00:00Z"
+    }
+  }
+]
